@@ -1,34 +1,40 @@
-body, html{
-  margin:0;
-  height:100%;
+body,
+html {
+  margin: 0;
+  height: 100%;
   font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.6rem;
-  color:#666;
+  color: #666;
+  scroll-behavior: smooth;
 }
 
-
-.container h1, h2, h4, h5, h6{
-  color:#318fb5;
+.container h1,
+h2,
+h4,
+h5,
+h6 {
+  color: #318fb5;
 }
 
-.sticky{
-  position:fixed;
-  top:0;
-  width:100%;
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
   transition: 0.4s ease-in-out;
-  z-index:2;
+  z-index: 2;
 }
-.navbar-nav{
+.navbar-nav {
   margin-left: auto;
 }
 
-.navitem a{
-  padding-right:55px;
+.navitem a {
+  padding-right: 55px;
 }
 
-.parallax1, .parallax2{
-  position:relative;
+.parallax1,
+.parallax2 {
+  position: relative;
   opacity: 0.8;
   background-position: center;
   background-size: cover;
@@ -37,151 +43,189 @@ body, html{
   z-index: -1;
 }
 
-
-
-.parallax1{
+.parallax1 {
   background-image: url("../images/bg2.jpg");
-  min-height:100%;
+  min-height: 100%;
 }
 
-.parallax2{
+.parallax2 {
   background-image: url("../images/bg1.jpg");
-  min-height:70%;
+  min-height: 70%;
 }
 
-.ptext1{
-  position:absolute;
-  top:40%;
-  width:100%;
-  text-align:center;
-  color:#fff;
+.ptext1 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
   letter-spacing: 7px;
 }
 
-.ptext1 h1{
+.ptext1 h1 {
   font-size: 4rem;
   font-weight: 700;
 }
 
-
-
 /* ----------- PROFILE SECTION----------- */
 
-
-.container{
-  padding-top:5%;
-  padding-bottom:5%;
+.container {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-section h1{
+section h1 {
   text-align: center;
   font-size: 3rem;
 }
 
-hr{
+hr {
   margin-bottom: 5%;
 }
 
-.profile-pic{
+.profile-pic {
   text-align: center;
-  opacity:0.95;
+  opacity: 0.95;
 }
 
-.profile-pic img{
-  height:350px;
+.profile-pic img {
+  height: 350px;
   border: 8px solid #ddd;
   border-radius: 100%;
 }
 /* EDucation */
 
-.top-rows{
-  margin-bottom:3%;
+.top-rows {
+  margin-bottom: 3%;
 }
-.alt-color{
+.alt-color {
   background-color: #faf3dd;
 }
 
-li{
+li {
   transition: 0.3s;
 }
 
 /* Skills */
-.skills li:hover{
+.skills li:hover {
   background-color: white;
   font-size: 1.05rem;
 }
 
-.skill-rank{
-  float:right;
-  color: #318fb5
+.skill-rank {
+  float: right;
+  color: #318fb5;
 }
 /* Project */
-#projects{
+#projects {
   display: none;
 }
 
+.row-project {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.projects img {
+  width: 100%;
+  border: 3px #fff solid;
+}
+.projects img:hover {
+  opacity: 0.7;
+  border-color: #04c2c9;
+  transition: all 0.5s ease-out;
+}
+.btn,
+.btn-dark,
+.btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+.btn:hover,
+.btn-dark:hover,
+.btn-light:hover {
+  background: #04c2c9;
+  color: #000;
+}
+
+.btn-dark {
+  background: #cccccc;
+  color: #fff;
+}
+
+.btn-light {
+  background: white;
+  color: #333;
+}
 /* -------------contacts----------- */
-.contact{
+.contact {
   background-color: #3f3f44;
-  color:#ccc;
+  color: #ccc;
   text-align: center;
 }
 
-#contact h1{
-  color:#ccc;
+#contact h1 {
+  color: #ccc;
 }
 
-#contact hr{
+#contact hr {
   border-top: 1px #555 solid;
 }
 
-#contact i{
+#contact i {
   font-size: 2rem;
   padding-right: 5%;
   padding-bottom: 5%;
 }
 
-.contact-row{
-  text-align:left;
-  padding-top:5%;
-  padding-bottom:10%;
+.contact-row {
+  text-align: left;
+  padding-top: 5%;
+  padding-bottom: 10%;
 }
 
-.contact-row p{
+.contact-row p {
   padding-left: 20%;
-
 }
-.contact a{
-  color:#ccc;
-  position:absolute;
+.contact a {
+  color: #ccc;
+  position: absolute;
   vertical-align: middle;
 }
 
-@media (max-width: 1000px){
-  body{
+@media (max-width: 1000px) {
+  body {
     font-size: 1.2rem;
     line-height: 1.6;
-    margin:0;
+    margin: 0;
     text-align: justify;
   }
 
-  .container{
-    margin-left:1%;
-    margin-right:1%;
+  .container {
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
-  .parallax1, .parallax2{
+  .parallax1,
+  .parallax2 {
     background-attachment: scroll;
   }
-  #skills{
-    font-size:0.8rem;
+  #skills {
+    font-size: 0.8rem;
   }
 
-  .contact-row p{
+  .contact-row p {
     padding-left: 0;
   }
 
-  .skill-rank{
-    padding-left:3%
+  .skill-rank {
+    padding-left: 3%;
   }
 }
